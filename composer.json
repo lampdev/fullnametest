@@ -1,0 +1,28 @@
+{
+    "name": "lampdev/fullnametest",
+    "description": "Trial task for comparing two full name records and determining if it's the same person",
+    "authors": [
+        {
+            "name": "Sergey Gerashchenko"
+        }
+    ],
+    "version": "1.0.0",
+    "require": {
+        "php": ">=7.2.2",
+        "phpunit/phpunit": "^8.5"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "3.*",
+        "phpstan/phpstan": "^0.12.33"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/"
+        }
+    },
+    "scripts": {
+        "tests": [
+            "vendor/bin/phpunit --configuration=phpunit.xml"
+        ]
+    }
+}
